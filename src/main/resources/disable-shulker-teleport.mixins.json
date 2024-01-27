@@ -3,7 +3,7 @@
 	"package": "top.offsetmonkey538.disableshulkerteleport.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-
+		"ShulkerEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
