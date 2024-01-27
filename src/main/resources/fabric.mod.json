@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "disable-shulker-teleport",
+	"version": "${modVersion}",
+	"name": "Disable Shulker Teleport",
+	"description": "Prevents shulkers from teleporting.",
+	"authors": [
+		"OffsetMonkey538"
+	],
+	"contact": {
+		"sources": "https://github.com/OffsetMods538/Disable-Shulker-Teleport",
+		"issues": "https://github.com/OffsetMods538/Disable-Shulker-Teleport/issues",
+		"homepage": "https://modrinth.com/mod/disable-shulker-teleport"
+	},
+	"license": "MIT",
+	"icon": "assets/disable-shulker-teleport/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"top.offsetmonkey538.disableshulkerteleport.DisableShulkerTeleport"
+		],
+		"client": [
+			"top.offsetmonkey538.disableshulkerteleport.DisableShulkerTeleportClient"
+		]
+	},
+	"mixins": [
+		"disable-shulker-teleport.mixins.json",
+		{
+			"config": "disable-shulker-teleport.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"accessWidener": "disable-shulker-teleport.accesswidener",
+	"depends": {
+		"minecraft": "${supportedMinecraftVersions}"
+	}
+}
